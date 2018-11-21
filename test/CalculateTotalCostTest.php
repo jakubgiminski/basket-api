@@ -11,7 +11,7 @@ use ShoppingBasket\Money\Money;
 class CalculateTotalCostTest extends TestCase
 {
     /** @test */
-    function calculate_total_cost_of_one_item()
+    function can_calculate_total_cost_of_one_item()
     {
         $basket = new Basket(...[
             new BasketItem('orange juice', new Money(1.4, 'GBP'))
@@ -26,7 +26,7 @@ class CalculateTotalCostTest extends TestCase
     }
 
     /** @test */
-    function calculate_total_cost_of_three_items()
+    function can_calculate_total_cost_of_three_items()
     {
         $basket = new Basket(...[
             new BasketItem('orange juice', new Money(10, 'GBP')),
