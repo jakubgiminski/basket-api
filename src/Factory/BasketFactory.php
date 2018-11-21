@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace App\Service;
+namespace App\Factory;
 
-use App\ValueObject\Basket;
-use App\ValueObject\BasketItem;
-use App\ValueObject\Money;
+use ShoppingBasket\Basket\Basket;
+use ShoppingBasket\Basket\BasketItem;
+use ShoppingBasket\Money\Money;
 use Symfony\Component\HttpFoundation\Request;
 
 class BasketFactory

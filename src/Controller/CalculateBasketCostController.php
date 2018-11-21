@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use App\Service\BasketFactory;
-use App\Service\CalculateBasketCost;
-use App\Service\ConvertCurrency;
+use App\Factory\BasketFactory;
+use App\Factory\CalculateTotalCost;
+use App\Money\ConvertCurrency;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -18,7 +18,7 @@ class CalculateBasketCostController extends AbstractController
 
     private $convertCurrency;
 
-    public function __construct(BasketFactory $basketFactory, CalculateBasketCost $calculateBasketCost, ConvertCurrency $convertCurrency)
+    public function __construct(BasketFactory $basketFactory, CalculateTotalCost $calculateBasketCost, ConvertCurrency $convertCurrency)
     {
         $this->basketFactory = $basketFactory;
         $this->calculateBasketCost = $calculateBasketCost;

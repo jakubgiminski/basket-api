@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace App\Service;
+namespace App\Money;
 
-use App\ValueObject\Money;
+use ShoppingBasket\Money\Money;
 
 final class ConvertCurrency
 {
