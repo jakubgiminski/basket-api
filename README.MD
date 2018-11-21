@@ -7,16 +7,18 @@ An API that allows you to calculate basket cost based on the items in it an a 10
 {
     url = "/calculate-basket-cost",
     method = "POST"
-    body = [
-        {
-            "description",
-            "cost": {
-                "amount",
-                "currency"
-            }
-        },
-        ...
-    ]
+    body = {
+        "items": [
+            {
+                "description",
+                "cost": {
+                    "amount",
+                    "currency"
+                }
+            },
+            ...
+        ]
+    }
 }
 ```
 
