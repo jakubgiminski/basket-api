@@ -14,7 +14,8 @@ An API that allows you to calculate basket cost based on the items in it an a 10
                 "amount",
                 "currency"
             }
-        }
+        },
+        ...
     ]
 }
 ```
