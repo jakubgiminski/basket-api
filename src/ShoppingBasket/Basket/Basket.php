@@ -2,7 +2,6 @@
 
 namespace ShoppingBasket\Basket;
 
-use ShoppingBasket\Basket\BasketItem;
 use ShoppingBasket\Money\Money;
 
 class Basket

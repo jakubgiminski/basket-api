@@ -3,8 +3,8 @@
 namespace App\Controller;
 
 use App\Factory\BasketFactory;
-use App\Factory\CalculateTotalCost;
-use App\Money\ConvertCurrency;
+use ShoppingBasket\Money\CalculateTotalCost;
+use ShoppingBasket\Money\ConvertCurrency;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
