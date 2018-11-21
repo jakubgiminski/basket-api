@@ -1,6 +1,6 @@
 # Basket API
 
-An API that allows you to calculate basket cost based on the items in it an a 10% discount.
+An API that allows you to calculate basket cost based on the items in it an a 10% discount. It also converts the currency from GBP to USD.
 
 ## API documentation
 ```js
