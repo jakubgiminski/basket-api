@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace App\ValueObject;
+namespace ShoppingBasket\Basket;
 
-use App\ValueObject\BasketItem;
-use App\ValueObject\Money;
+use ShoppingBasket\Basket\BasketItem;
+use ShoppingBasket\Money\Money;
 
 class Basket
 {

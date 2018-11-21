@@ -1,13 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace App\Service;
+namespace ShoppingBasket\Money;
 
-use App\ValueObject\Basket;
-use App\ValueObject\Money;
+use ShoppingBasket\Basket\Basket;
 
-final class CalculateBasketCost
+final class CalculateTotalCost
 {
-    private const DISCOUNT = 0.1;
+    public const DISCOUNT = 0.1;
 
     public function __invoke(Basket $basket): Money
     {
