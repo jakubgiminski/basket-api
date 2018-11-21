@@ -1,12 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace App\Money;
-
-use ShoppingBasket\Money\Money;
+namespace ShoppingBasket\Money;
 
 final class ConvertCurrency
 {
-    private const CONVERSION_RATE = 1.28;
+    public const CONVERSION_RATE = 1.28;
 
     public function __invoke(Money $money, string $targetCurrency): Money
     {
