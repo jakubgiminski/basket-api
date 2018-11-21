@@ -21,7 +21,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "ShoppingBasket\\": "src/ShoppingBasket/"
+            "ShoppingBasket\\": "src/ShoppingBasket/",
+            "ShoppingBasketTest\\": "test/"
         }
     },
     "replace": {

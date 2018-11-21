@@ -3,11 +3,10 @@
 namespace ShoppingBasket\Money;
 
 use ShoppingBasket\Basket\Basket;
-use ShoppingBasket\Money\Money;
 
 final class CalculateTotalCost
 {
-    private const DISCOUNT = 0.1;
+    public const DISCOUNT = 0.1;
 
     public function __invoke(Basket $basket): Money
     {
