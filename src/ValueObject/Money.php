@@ -32,11 +32,6 @@ class Money
         return $this->currency;
     }
 
-    public function __toString(): string
-    {
-        return "$this->amount $this->currency";
-    }
-
     private static function validateCurrency(string $currency): void
     {
         if ($currency !== 'GBP' && $currency !== 'USD') {
