@@ -21,7 +21,11 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/",
-            "ShoppingBasket\\": "src/ShoppingBasket/",
+            "ShoppingBasket\\": "src/ShoppingBasket/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "ShoppingBasketTest\\": "test/"
         }
     },
