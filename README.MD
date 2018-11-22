@@ -2,8 +2,20 @@
 
 An API that allows you to calculate basket cost based on the items in it an a 10% discount. It also converts the currency from GBP to USD.
 
-### Tests
+## Domain and the app
+The domain model of the Shopping Basket is located [here](https://github.com/jakubgiminski/basket-api/tree/master/src/ShoppingBasket) and 
+the symfony app (controller, route, and a factory) is [here](https://github.com/jakubgiminski/basket-api/tree/master/src/App)
 
+## Installation 
+Required php version is 7.2. Use composer for dependencies management.
+```
+composer install
+```
+
+## Tests
+### Execute the test suite
+```vendor/bin/phpunit tests --testdox --color```
+### Output
 ```
 ShoppingBasketTest\Basket
  ✔ Basket cannot be empty
@@ -21,7 +33,7 @@ ShoppingBasketTest\ConvertCurrency
 
 ## API documentation
 ```js
-{
+Request {
     url = "/calculate-basket-cost",
     method = "POST"
     body = {
@@ -37,14 +49,15 @@ ShoppingBasketTest\ConvertCurrency
         ]
     }
 }
+Response {
+    body = "total_basket_cost": {
+        "amount",
+        "currency"
+    }
+}
 ```
 
-## Installation 
-Make sure you have php 7.2. Then, run composer to install php dependencies.
-```
-composer install
-```
-## Run Symfony server
+## Run the symfony server
 ```
 php bin/console server:start
 ```
